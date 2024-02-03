@@ -1,0 +1,7 @@
+{
+  "name": "novlo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}
