@@ -142,7 +142,7 @@ function App() {
           />
         )}
 
-        {isOnline === false && <MobileModal />}
+        {/* {isOnline === false && <MobileModal />} */}
       </div>
     </>
   );
