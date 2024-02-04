@@ -36,6 +36,22 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    const handlemess = (e) => {
+      const datafromCap = e.data;
+
+      if (datafromCap === "Hello form the cap app") {
+        console.log("data is reacvied from the cap app.....", datafromCap);
+      }
+    };
+
+    window.addEventListener("message", handlemess);
+
+    return () => {
+      window.removeEventListener("message", handlemess);
+    };
+  }, []);
+
   const CurrentNetworkStatus = () => {
     console.log("network", isOnline);
 
